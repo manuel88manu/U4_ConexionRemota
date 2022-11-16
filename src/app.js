@@ -10,6 +10,8 @@ import config from './config/config';
 const app = express();
 //FIC: Settings
 import { mongoose } from './config/database.config';
+// Import Routes
+import routeAPI from './api/v1/routes/index';
 app.set('port', config.PORT);
 //FIC: Middlewares generales
 app.use(cors());
@@ -32,5 +34,8 @@ app.get('/DrFIC', (req,res)=>{
 // Swagger Docs
 // Middleware para el manejo de errores
 // Export App
+// Routes
+routeAPI(app);
 
+// Export App
 export default app;
