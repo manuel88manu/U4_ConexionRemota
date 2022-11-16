@@ -9,6 +9,7 @@ import config from './config/config';
 //FIC: Declaramos la variable app igualandola a express
 const app = express();
 //FIC: Settings
+import { mongoose } from './config/database.config';
 app.set('port', config.PORT);
 //FIC: Middlewares generales
 app.use(cors());
