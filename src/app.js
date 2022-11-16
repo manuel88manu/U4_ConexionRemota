@@ -32,4 +32,5 @@ app.get('/DrFIC', (req,res)=>{
 // Swagger Docs
 // Middleware para el manejo de errores
 // Export App
+
 export default app;
